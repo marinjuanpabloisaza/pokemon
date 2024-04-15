@@ -1,0 +1,41 @@
+*,
+.gradient {
+    /* background: red !important; */
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    overflow: hidden;
+    padding-top: 100px;
+    /* background: red; */
+}
+
+.font {
+    /* background: red; */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.pokemon-image {
+    width: 580px;
+    height: 580px;
+}
+
+.text {
+    color: white;
+    font-size: 100px;
+}
+
+.index{
+    /* bottom: 100px; */
+    left: 100px;
+    color: rgba(255, 255, 255, 0.295);
+    position: absolute;
+    font-size: 500px;
+    z-index: 2;
+}
+
+.overflow{
+    overflow:hidden
+}

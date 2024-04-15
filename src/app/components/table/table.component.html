@@ -1,0 +1,57 @@
+<div class="table-responsive">
+  <table class="table table-hover table-dark table-head">
+    <thead>
+      <tr>
+        @for (dataTable of dataTable; track dataTable?.name) {
+        <th scope="col">{{dataTable?.title}}</th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @for (currentList of currentList; track currentList?.id) {
+      <tr>
+        @for (dataTable of dataTable; track dataTable?.name) {
+        <td class="">{{ currentList?.[dataTable?.name] }}
+        </td>
+        }
+      </tr>
+      }
+    </tbody>
+  </table>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      @if (currentPage === 1) {
+      <li class="page-item disabled">
+        <a class="page-link" (click)="previous()">Previous</a>
+      </li>
+      } @else {
+      <li class="page-item">
+        <a class="page-link" (click)="previous()">Previous</a>
+      </li>
+      }
+
+      @for (iterator of itemPage; track itemPage) {
+      @if (currentPage === iterator) {
+      <li class="page-item disabled">
+        <a class="page-link" (click)="select(iterator)">{{ iterator }}</a>
+      </li>
+      } @else {
+      <li class="page-item">
+        <a class="page-link" (click)="select(iterator)">{{ iterator }}</a>
+      </li>
+      }
+      }
+      <li class="page-item">
+        @if (currentPage > 1 && currentPage >= itemsPerPage) {
+      <li class="page-item disabled">
+        <a class="page-link" (click)="next()">Next</a>
+      </li>
+      } @else {
+      <li class="page-item">
+        <a class="page-link" (click)="next()">Next</a>
+      </li>
+      }
+      </li>
+    </ul>
+  </nav>
+</div>

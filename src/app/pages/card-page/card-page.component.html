@@ -1,0 +1,30 @@
+<div class="main" [style.background]="pokemonInfo?.types[0]?.color">
+  <!-- <div [style.background]="pokemonInfo?.types[0]?.color"> -->
+
+    <div  class="font">
+      <button (click)="more()">{{pokemonInfo.name}} aa</button>
+
+      <div class="row end-content overflow">
+        <div class="col-sm columns-1 stast-cards flex-cente text">
+          <p class="text">{{pokemonInfo.name}}</p>
+          </div>
+          <div class="index">
+            <p class="text index">#{{id}}</p>
+            </div>
+        <div class="col-sm columns-1 stast-cards flex-cente">
+          @if(pokemonInfo?.allInfo?.sprites?.other?.dream_world?.front_default){
+            <img [src]="pokemonInfo?.allInfo?.sprites?.other?.dream_world?.front_default" class="pokemon-image">
+      
+          }@else {
+            <img [src]="pokemonInfo.image" class="pokemon-image">
+          }
+        </div>
+       
+      
+    
+      </div>
+
+
+    <!-- </div> -->
+  </div>
+</div>

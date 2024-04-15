@@ -1,0 +1,27 @@
+
+  /* animacion del texto */
+  .scale-up{
+    transition-duration: 1s;
+    transition-property: all;
+    text-decoration: none;
+
+}
+  .scale-up:hover{
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(.31,1.62,0,-0.18);
+    /* color:rgb(177, 177, 177); */
+    box-shadow: inset;
+    font-size: 16px;
+}
+
+.backdegradate{
+  background: 0 8px 32px 0 rgba(5, 5, 7, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(5, 5, 7, 0.1);
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(4px);
+height: 60px;
+}
+  /* Fin animacion del texto */
+
+
+

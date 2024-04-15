@@ -1,0 +1,49 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.pokemon-container {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.end-content {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.title-stats {
+  font-size: 12px;
+  background-color: red;
+  border-radius: 25px;
+  color: white;
+  padding: 2px;
+}
+
+.pokemon-image {
+  width: 280px;
+  height: 280px;
+}
+
+
+.stast-cards {
+  margin: 0px;
+}
